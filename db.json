@@ -1,0 +1,25 @@
+{
+  "users": [
+    { "id": 1, "name": "Omar", "email": "omar@test.com", "password": "123456" }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "First Post",
+      "description": "Hello world!",
+      "author": "Omar"
+    },
+    {
+      "id": 2,
+      "title": "Second Post",
+      "description": "This is my second post .",
+      "author": "Omar"
+    },
+    {
+      "id": 3,
+      "title": "Third Post",
+      "description": "Another day, another post.",
+      "author": "Omar"
+    }
+  ]
+}
