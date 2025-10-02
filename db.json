@@ -1,29 +1,69 @@
 {
   "users": [
-    { "id": 1, "name": "Omar", "email": "omar@test.com", "password": "123456" }
-  ],
-  "posts": [
     {
       "id": 1,
-      "title": "First Post",
-      "description": "Hello world!",
-      "author": "Omar"
+      "username": "omar",
+      "email": "omar@example.com",
+      "password": "123456",
+      "avatar": "https://i.pravatar.cc/150?img=3"
     },
     {
       "id": 2,
-      "title": "Second Post",
-      "description": "This is my second post .",
-      "author": "Omar"
-    },
-    {
-      "id": 3,
-      "title": "Third Post",
-      "description": "Another day, another post.",
-      "author": "Omar"
+      "username": "ahmed",
+      "email": "ahmed@example.com",
+      "password": "abcdef",
+      "avatar": "https://i.pravatar.cc/150?img=5"
     }
   ],
+
+  "posts": [
+    {
+      "id": 1,
+      "title": "Hello World",
+      "body": "This is my first blog post 🎉",
+      "authorId": 1,
+      "image": "https://picsum.photos/600/400?random=1",
+      "createdAt": "2025-10-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "React + JSON Server",
+      "body": "Learning how to build a fake backend using json-server!",
+      "authorId": 2,
+      "image": "https://picsum.photos/600/400?random=2",
+      "createdAt": "2025-10-01T12:00:00Z"
+    }
+  ],
+
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 2,
+      "body": "Nice post Omar 👏",
+      "createdAt": "2025-10-01T11:00:00Z"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "userId": 1,
+      "body": "Thanks Ahmed 🙌",
+      "createdAt": "2025-10-01T11:30:00Z"
+    }
+  ],
+
   "images": [
-    { "id": 1, "url": "https://picsum.photos/200/300", "desc": "Random Image" },
-    { "id": 2, "url": "https://picsum.photos/300/200", "desc": "Another Image" }
+    {
+      "id": 1,
+      "url": "https://picsum.photos/400/300?random=10",
+      "desc": "Random stock photo",
+      "uploadedBy": 1
+    },
+    {
+      "id": 2,
+      "url": "https://picsum.photos/400/300?random=11",
+      "desc": "Nature view",
+      "uploadedBy": 2
+    }
   ]
 }
